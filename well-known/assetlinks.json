@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mellog.deulseokzz",
+      "sha256_cert_fingerprints": [
+        "E6:42:FD:33:AA:37:A1:4F:98:DF:CF:6C:E3:9E:44:7B:CB:3D:3C:1E:82:F8:9B:22:A3:54:85:6F:CC:C2:A2:DB"
+      ]
+    }
+  }
+]
