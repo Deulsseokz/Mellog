@@ -1,0 +1,23 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "AY46PW2JGD.com.mellog.deulseokzz",
+        "paths": [
+          "/invite/*"
+        ]
+      }
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "AY46PW2JGD.com.mellog.deulseokzz"
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "AY46PW2JGD.com.mellog.deulseokzz"
+    ]
+  }
+}
