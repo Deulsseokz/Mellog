@@ -1,10 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { useLocation } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const location = useLocation();
+  console.log(location);
+
+  // URL의 마지막 주소를 가져오는 방법들
+  const code = location.pathname.split("/").pop();
+
+  useEffect(() => {
+    if (code) {
+      const customSchemeUrl = `mellog://invite/${code}`;
+      window.location.href = customSchemeUrl;
+    }
+  }, [code]);
 
   return (
     <>
@@ -29,7 +42,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
