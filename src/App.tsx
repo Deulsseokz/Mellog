@@ -10,11 +10,11 @@ function App() {
   console.log(location);
 
   // URL의 마지막 주소를 가져오는 방법들
-  const code = location.pathname.split("/").pop();
+  const code = location.pathname;
 
   useEffect(() => {
     if (code) {
-      const customSchemeUrl = `mellog://invite/${code}`;
+      const customSchemeUrl = `mellog:/${code}`;
       window.location.href = customSchemeUrl;
     }
   }, [code]);
